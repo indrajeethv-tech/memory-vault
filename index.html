@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bestfriend Forever 💙</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PASSWORD -->
+<div id="passwordScreen">
+  <div class="password-box">
+    <h2>🔐 Enter Password</h2>
+    <input type="password" id="passwordInput">
+    <button onclick="checkPassword()">Enter</button>
+  </div>
+</div>
+
+<!-- ENVELOPE -->
+<div id="envelopeScreen" style="display:none;">
+  <div class="envelope" onclick="openEnvelope()">
+    <div class="flap"></div>
+    <div class="body"></div>
+    <div class="letter-inside">💌</div>
+    <p>Tap to Open</p>
+  </div>
+</div>
+
+<!-- MAIN -->
+<div id="mainContent">
+
+  <!-- LETTER BOX -->
+  <section class="letter-box">
+    <h1>Bestfriend Forever 💙</h1>
+    <div id="letterText" contenteditable="true"></div>
+  </section>
+
+  <!-- BUCKET LIST (Immediately after letter) -->
+  <section class="bucket-section">
+    <h2>Our Bucket List 🪣✨</h2>
+    <ul class="bucket-list">
+      <li><input type="checkbox"> Travel together</li>
+      <li><input type="checkbox"> Watch sunrise together</li>
+      <li><input type="checkbox"> Late night calls</li>
+      <li><input type="checkbox"> Video Call</li>
+      <li><input type="checkbox"> Snaps before you go out after getting ready</li>
+      <li><input type="checkbox"> Photos</li>
+      <li><input type="checkbox"> Reels</li>
+    </ul>
+  </section>
+
+  <!-- MEDIA FOLDERS -->
+<section class="media-folders">
+
+  <div class="folder" onclick="openSection('imagesSection')">
+    📸 Images
+  </div>
+
+  <div class="folder" onclick="openSection('videosSection')">
+    🎬 Videos
+  </div>
+
+  <div class="folder" onclick="openSection('musicSection')">
+    🎧 Music
+  </div>
+
+  <div class="folder" onclick="openSection('screenshotsSection')">
+    📱 Screenshots
+  </div>
+
+</section>
+
+
+<!-- IMAGES SECTION -->
+<section id="imagesSection" class="media-section">
+  <h2>Our Images 📸</h2>
+  <div class="gallery">
+    <div class="media-item">
+    <img src="assets/images/First.jpeg" alt="Memory 1">
+    <p class="media-caption">14th Feb 2025<br>First picture ever. First time together. Forever special 🪞🤍</p>
+    </div>
+
+    <div class="media-item">
+    <img src="assets/images/Second.jpeg" alt="Memory 1">
+    <p class="media-caption">24th Feb 2025<br>The Tradition, smiles, and my favorite person beside me 🤍🌸</p>
+    </div>
+
+    <div class="media-item">
+    <img src="assets/images/Favo.jpg" alt="Memory 1">
+    <p class="media-caption">200+ photos, countless smiles, and one picture I’ll always choose 🤍📸</p>
+    </div>
+
+    <div class="media-item">
+    <img src="assets/images/Fav.jpeg" alt="Memory 1">
+    <p class="media-caption">The favorite pic of you, after your 18th bday 🤍📸</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- VIDEOS SECTION -->
+<section id="videosSection" class="media-section">
+  <h2>Our Videos 🎬</h2>
+  <div class="video-grid">
+
+    <div class="video-item">
+      <video controls playsinline preload="metadata">
+        <source src="assets/videos/heart.mp4" type="video/mp4">
+      </video>
+      <p class="video-caption">
+        On 24th September 2025, tired in a bus, I saw the heart you made with your hair 🤍<br>And suddenly, all I could do was smile like an idiot 🚌💕
+      </p>
+    </div>
+
+    <div class="video-item">
+      <video controls playsinline preload="metadata">
+        <source src="assets/videos/Bhoomi.mp4" type="video/mp4">
+      </video>
+      <p class="video-caption">
+        I didn’t know what I was searching for…<br>until I found you, luzzz 🤍✨
+      </p>
+    </div>
+
+    <div class="video-item">
+      <video controls playsinline preload="metadata">
+        <source src="assets/videos/gallary.mp4" type="video/mp4">
+      </video>
+      <p class="video-caption">
+        I own the phone… but you own my gallery more than anyone else 🤍📱✨
+      </p>
+    </div>
+
+    <div class="video-item">
+      <video controls playsinline preload="metadata">
+        <source src="assets/videos/Parivala.mp4" type="video/mp4">
+      </video>
+      <p class="video-caption">
+        Not more than friendship… but everything within it 🤍<br>Happy 18th, Bhoomi ✨
+      </p>
+    </div>
+
+    <div class="video-item">
+      <video controls playsinline preload="metadata">
+        <source src="assets/videos/26th.mp4" type="video/mp4">
+      </video>
+      <p class="video-caption">
+        12:09 AM, 26th Feb 2026 — asked for a snap… got a memory I’ll never forget 🤍🌙💕
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- MUSIC SECTION -->
+<section id="musicSection" class="media-section">
+  <h2>Our Music 🎧</h2>
+
+  <div class="audio-card" onclick="playAudio('assets/music/Paravashanadenu (Bhoomi).mp3', '16th Nov 2025 <br> The first song you sang for me… Paravashanadenu 🤍<br>Since that day, your voice feels like home ✨')">
+    Paravashanadenu
+  </div>
+
+  <div class="audio-card" onclick="playAudio('assets/music/Roopasi (Bhoomi).mp3', '19th Feb 2026<br>Roopasi 🎶 — the second time your voice made my heart pause for a moment 🤍')">
+    Roopasi
+  </div>
+
+  <div class="audio-card" onclick="playAudio('assets/audio/song3.mp3', 'Waiting.......')">
+    Marali Mareyagi
+  </div>
+
+  <!-- Main Audio Player -->
+  <div id="audioPlayerContainer">
+    <audio id="mainAudio" controls></audio>
+    <p id="audioCaption"></p>
+  </div>
+
+</section>
+
+
+<!-- SCREENSHOTS SECTION -->
+<section id="screenshotsSection" class="media-section">
+  <h2>Our Screenshots 📱</h2>
+
+  <div class="gallery">
+
+    <div class="media-item">
+      <img src="assets/screenshot/ss0.jpeg" alt="Screenshot 1">
+      <p class="media-caption">Your 18th b'day wish on midnight</p>
+    </div>
+
+    <div class="media-item">
+      <img src="assets/screenshot/ss5.jpeg" alt="Screenshot 2">
+      <p class="media-caption">Your pic as my wallpaper</p>
+    </div>
+
+    <div class="media-item">
+      <img src="assets/screenshot/ss2.jpeg" alt="Screenshot 3">
+      <p class="media-caption"></p>
+    </div>
+
+    <div class="media-item">
+      <img src="assets/screenshot/ss3.jpeg" alt="Screenshot 4">
+      <p class="media-caption"></p>
+    </div>
+
+    <div class="media-item">
+      <img src="assets/screenshot/ss4.jpeg" alt="Screenshot 5">
+      <p class="media-caption"></p>
+    </div>
+
+    <div class="media-item">
+      <img src="assets/screenshot/ss1.jpeg" alt="Screenshot 6">
+      <p class="media-caption"></p>
+    </div>
+
+  </div>
+</section>
+
+</div>
+
+<div id="popupModal" onclick="closePopup()">
+  <div class="popup-box" id="popupText"></div>
+</div>
+
+<audio id="bgMusic" src="music.mp3" loop></audio>
+
+<script src="script.js"></script>
+<div id="mediaModal"></div>
+</body>
+</html>

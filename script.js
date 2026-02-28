@@ -139,6 +139,10 @@ I was so happy… genuinely, peacefully happy.
 And that snap at 12:09 AM on 26th 🤣🤍
 I still remember the exact feeling in my chest when I saw it.
 
+28st February 2026…
+The first time you mentioned me in your story after I reminded you to tag me 🤍
+It was just your picture… but it meant more than you know ✨
+
 The promises we made…
 to spend more time together in the future,
 to take pictures, make reels, do video calls…
